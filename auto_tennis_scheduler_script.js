@@ -4,6 +4,7 @@
 var schedulerLabel = "Tennis Scheduler"
 var eventLocation = "<Location>"
 var fromEmail = '<fromEmail>'
+var myname = 'myname'
 
 function createTennisCalEvent(title, startDate, endDate, location)
 {
@@ -92,8 +93,8 @@ function processMailThreads(subject, fromDate, toDate, eventHandle)
         if (sd != null) {
           courtTime = 2;
         } else {
-          if (cplayer1.equals("Poorna Ramasamy")) cplayer1 = "";
-          if (cplayer2.equals("Poorna Ramasamy")) cplayer2 = "";
+          if (cplayer1.equals(myname)) cplayer1 = "";
+          if (cplayer2.equals(myname)) cplayer2 = "";
           teamSep = "";
         }
         var cdate1 = adjustTimeForDST(new Date(ctime+' UTC'));
